@@ -263,7 +263,6 @@ section:not(.hero) {
     &.is-sticky {
         // background-color: #1b1a1763;
         background-color: #1b1a177c;
-        // background: var(--hero-gradient);
         padding: var(--size-100);
 
         .logo {
@@ -448,7 +447,7 @@ section:not(.hero) {
 
     @media (max-width: 767px) {
         text-align: center;
-        padding-top: var(--size-800);
+        padding-top: var(--size-400);
         padding-bottom: var(--size-700);
 
         &__wrapper {

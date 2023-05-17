@@ -482,7 +482,7 @@ section:not(.hero) {
 @media (max-width: 767px) {
   .hero {
     text-align: center;
-    padding-top: var(--size-800);
+    padding-top: var(--size-400);
     padding-bottom: var(--size-700);
   }
   .hero__wrapper {
