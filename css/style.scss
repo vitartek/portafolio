@@ -375,7 +375,6 @@ section:not(.hero) {
 }
 
 .hero {
-
     background-color: var(--clr-bg-body);
     padding: 0;
 
@@ -454,7 +453,7 @@ section:not(.hero) {
 
     @media (max-width: 767px) {
         text-align: center;
-        padding-top: var(--size-800);
+        padding-top: var(--size-300);
         padding-bottom: var(--size-700);
 
         &__wrapper {
@@ -473,6 +472,7 @@ section:not(.hero) {
         }
         img {
             width: 80%;
+            margin-bottom: var(--size-600);
         }
     }
 
