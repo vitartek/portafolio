@@ -150,7 +150,14 @@ p {
   background-color: var(--clr-primary-500);
   border-radius: 50rem;
   color: var(--clr-white);
-  font-weight: 70;
+  font-weight: 700;
+}
+
+.cta-dark {
+  background-color: var(--clr-neutral-900);
+  border-radius: 50rem;
+  color: var(--clr-white);
+  font-weight: 700;
 }
 
 .box-title {
@@ -434,7 +441,6 @@ section:not(.hero) {
   pointer-events: none;
 }
 .hero__title {
-  font-size: var(--fs-900);
   font-weight: 800;
   color: var(--clr-neutral-700);
   font-size: var(--fs-800);
@@ -482,7 +488,7 @@ section:not(.hero) {
 @media (max-width: 767px) {
   .hero {
     text-align: center;
-    padding-top: var(--size-400);
+    padding-top: var(--size-800);
     padding-bottom: var(--size-700);
   }
   .hero__wrapper {

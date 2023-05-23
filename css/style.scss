@@ -79,7 +79,13 @@ p { margin-bottom: 0rem; }
     background-color: var(--clr-primary-500);
     border-radius: 50rem;
     color: var(--clr-white);
-    font-weight: 70;
+    font-weight: 700;
+}
+.cta-dark {
+    background-color: var(--clr-neutral-900);
+    border-radius: 50rem;
+    color: var(--clr-white);
+    font-weight: 700;
 }
 .box-title {
     text-align: center;
@@ -263,6 +269,7 @@ section:not(.hero) {
     &.is-sticky {
         // background-color: #1b1a1763;
         background-color: #1b1a177c;
+        // background: var(--hero-gradient);
         padding: var(--size-100);
 
         .logo {
@@ -395,7 +402,7 @@ section:not(.hero) {
     }
 
     &__title {
-        font-size: var(--fs-900);
+        // font-size: var(--fs-900);
         font-weight: 800;
         color: var(--clr-neutral-700);
         font-size: var(--fs-800);
@@ -447,7 +454,7 @@ section:not(.hero) {
 
     @media (max-width: 767px) {
         text-align: center;
-        padding-top: var(--size-400);
+        padding-top: var(--size-800);
         padding-bottom: var(--size-700);
 
         &__wrapper {
