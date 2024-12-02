@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 *, *::before, ::after {
   box-sizing: border-box;
 }
@@ -58,7 +60,8 @@ ul {
 
 :root {
   --clr-primary-200: #e6d5b8;
-  --clr-primary-500: #f0a500;
+  --clr-primary-300: #FFB005;
+  --clr-primary-500: #855B00;
   --clr-accent-500: #e45826;
   --clr-neutral-100: #e5e4e1;
   --clr-neutral-500: #9f9f9c;
@@ -168,9 +171,9 @@ p {
 }
 
 .cta-success {
-  background-color: #07ab1a;
+  background-color: #1FEF37;
   border-radius: 50rem;
-  color: var(--clr-white);
+  color: #303030;
   font-weight: 700;
 }
 
@@ -243,12 +246,12 @@ p {
   width: 8em;
   margin-inline: auto;
 }
-.tech p {
+.tech h3 {
   font-size: var(--fs-600);
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-300);
   font-weight: 700;
 }
-.tech h3 {
+.tech h4 {
   color: var(--clr-white);
   font-size: var(--fs-400);
 }
@@ -477,12 +480,14 @@ section:not(.hero) {
 .hero__subtitle {
   font-size: var(--fs-700);
   font-weight: 700;
-  color: var(--clr-neutral-700);
+  /* color: var(--clr-neutral-700); */
+  color: #212111;
 }
 .hero__p {
   font-size: 500;
   max-width: 37em;
-  color: var(--clr-neutral-900);
+  /* color: var(--clr-neutral-900); */
+  color: #212111;
 }
 .hero .cta {
   margin-top: var(--size-500);
@@ -654,7 +659,7 @@ section:not(.hero) {
 }
 .copyright span {
   font-weight: 600;
-  color: var(--clr-primary-500);
+  color: #FFB61A;
 }
 
 /* Animations */
