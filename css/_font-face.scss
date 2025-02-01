@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'jetbrainsmono';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:
+       local('jetbrainsmono'),
+       url('/assets/fonts/JetBrainsMono-Medium.ttf');
+}
+@font-face {
+    font-family: 'jetbrainsmono';
+    font-weight: normal;
+    font-style: bold;
+    font-display: swap;
+    src:
+       local('jetbrainsmono'),
+       url('/assets/fonts/JetBrainsMono-Bold.ttf');
+}
+@font-face {
+    font-family: 'jetbrainsmono';
+    font-weight: normal;
+    font-style: bold;
+    font-display: swap;
+    src:
+       local('jetbrainsmono'),
+       url('/assets/fonts/JetBrainsMono-ExtraBold.ttf');
+}

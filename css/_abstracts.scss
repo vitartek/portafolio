@@ -1,0 +1,29 @@
+$clr-text: #DCEEF6;
+$clr-dark: #161616;
+$clr-neutral-900: #1A1A1A;
+$clr-neutral-shade-100: #d9d9d938;
+$clr-primary: #8BC4E2;
+$clr-secondary: #203680;
+$clr-accent: #4458D1;
+
+$rounded-none: 0;
+$rounded-md: 10px;
+
+$fs-3xl: 4em;
+$fs-3xl: 3.5em;
+$fs-2xl: 2.5em;
+$fs-xl: 1.625em;
+$fs-lg: 1.25em;
+$fs-md: 1em;
+
+$fw-extrabold: bolder;
+$fw-bold: bold;
+$fw-medium: normal;
+
+$button-font-family: "JetBrains Mono", system-ui, sans-serif;
+$button-font-size: $fs-xl;
+$button-text-transform: capitalize;
+$button-font-weight: $fw-extrabold;
+$button-padding: 1rem 2rem;
+$button-border: none;
+$button-border-radius: $rounded-none;
