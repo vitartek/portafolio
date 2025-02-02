@@ -174,7 +174,12 @@ header > *{
 
 
     img {
+        border: 2px solid red;
+    }
+    img {
         margin: 0 auto;
+        width: 100%;
+        max-width: 20rem;
     }
     h1{
         text-transform: uppercase;
@@ -190,10 +195,6 @@ header > *{
     text-align: center;
     padding: 5rem 0;
     gap: 1rem;
-
-    img {
-        max-width: 20rem;
-    }
 }
 
 .proyects {
@@ -206,6 +207,7 @@ header > *{
     .cards {
         display: flex;
         gap: 1rem;
+        overflow-x: auto;
     }
     .card {
         min-width: 70%;
@@ -226,18 +228,12 @@ header > *{
     .card:hover img {
         transform: scale(1.1);
     }
-
-    @media (max-width: $query-md) {
-        .cards {
-            overflow-x: auto;
-        }
-    }
-    
     @media (min-width: $query-md) {
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
+            overflow-x: initial;
         }
     }
 }
