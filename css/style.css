@@ -269,9 +269,6 @@ header > * {
   color: #DCEEF6;
 }
 .hero img {
-  border: 2px solid red;
-}
-.hero img {
   margin: 0 auto;
   width: 100%;
   max-width: 20rem;
