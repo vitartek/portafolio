@@ -29,7 +29,6 @@ body {
     color: white;
     font-size: 16px;
     font-family: system-ui, sans-serif;
-    // border: 1px solid red;
     overflow-x: hidden;
 }
 
@@ -125,8 +124,7 @@ header {
     z-index: 100;
 
     .header__logo {
-        width: 100%;
-        max-width: 2rem;
+        width: clamp(3rem, 2vw, 5rem);
     }
     .navbar {
         ul {
@@ -163,9 +161,6 @@ header > *{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media(min-width: $query-md) {
-        // border: 2px solid red;
-    }
 }
 
 
@@ -174,8 +169,8 @@ header > *{
 
     img {
         margin: 0 auto;
-        width: 100%;
-        max-width: 20rem;
+        width: clamp(15rem, 25vw, 20rem);
+        // max-width: 20rem;
     }
     h1{
         text-transform: uppercase;
@@ -211,6 +206,7 @@ header > *{
             border-radius: 20px;
             transform: scale(1);
             transition: .3s ease all;
+            width: clamp(20rem, 25rem, 30rem);
         }
         h3{
             margin-top: 1rem;
@@ -246,16 +242,17 @@ header > *{
     }
     img.about__user {
         margin: 3rem auto 0;
-        // max-width: 40rem;
-        // max-width: 20rem;
-        width: 100%;
+        width: clamp(25rem, 27vw, 30rem);
     }
 
     .card {
         background: $clr-neutral-shade-100;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
         border-radius: $rounded-md;
+        align-items: center;
+        padding: auto;
+        justify-content: center;
+
 
         h3 {
             text-transform: uppercase;
@@ -286,7 +283,9 @@ header > *{
         margin-top: 2rem;
 
         img {
-            max-width: 5rem;
+            // max-width: 5rem;
+            width: 5rem;
+            color: white;
         }
     }
 
@@ -297,7 +296,7 @@ header > *{
 
     @media (min-width: $query-md) {
         .about__right {
-            gap: .7rem;
+            gap: 2rem;
         }
     }
 }
@@ -319,8 +318,9 @@ header > *{
         align-items: center;
     }
     img {
-        width: 100%;
-        max-width: 7rem;
+        // width: 100%;
+        // max-width: 7rem;
+        width: clamp(5rem, 6rem, 7rem);
     }
 
     @media (min-width : $query-md) {
@@ -348,7 +348,7 @@ header > *{
 
     .card__info {
         .card-img {
-            background-image: url(../assets/images/freelance.png);
+            background-image: url(../assets/images/plane.webp);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             width: 2rem;

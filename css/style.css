@@ -233,8 +233,7 @@ header {
   z-index: 100;
 }
 header .header__logo {
-  width: 100%;
-  max-width: 2rem;
+  width: clamp(3rem, 2vw, 5rem);
 }
 header .navbar ul {
   list-style: none;
@@ -265,13 +264,13 @@ header > * {
   align-items: center;
   justify-content: space-between;
 }
+
 .hero {
   color: #DCEEF6;
 }
 .hero img {
   margin: 0 auto;
-  width: 100%;
-  max-width: 20rem;
+  width: clamp(15rem, 25vw, 20rem);
 }
 .hero h1 {
   text-transform: uppercase;
@@ -307,6 +306,7 @@ header > * {
   border-radius: 20px;
   transform: scale(1);
   transition: 0.3s ease all;
+  width: 25rem;
 }
 .proyects .card h3 {
   margin-top: 1rem;
@@ -339,13 +339,15 @@ header > * {
 }
 .about img.about__user {
   margin: 3rem auto 0;
-  width: 100%;
+  width: clamp(25rem, 27vw, 30rem);
 }
 .about .card {
   background: rgba(217, 217, 217, 0.2196078431);
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   border-radius: 10px;
+  align-items: center;
+  padding: auto;
+  justify-content: center;
 }
 .about .card h3 {
   text-transform: uppercase;
@@ -373,7 +375,8 @@ header > * {
   margin-top: 2rem;
 }
 .about .about__right img {
-  max-width: 5rem;
+  width: 5rem;
+  color: white;
 }
 .about .about__right > :nth-child(2), .about .about__right > :nth-child(4) {
   margin-top: 1rem;
@@ -381,7 +384,7 @@ header > * {
 }
 @media (min-width: 45em) {
   .about .about__right {
-    gap: 0.7rem;
+    gap: 2rem;
   }
 }
 
@@ -401,8 +404,7 @@ header > * {
   align-items: center;
 }
 .habilities img {
-  width: 100%;
-  max-width: 7rem;
+  width: 6rem;
 }
 @media (min-width: 45em) {
   .habilities .habilities__gallery {
@@ -427,7 +429,7 @@ header > * {
   margin-bottom: 1.2rem;
 }
 .experience .card__info .card-img {
-  background-image: url(../assets/images/freelance.png);
+  background-image: url(../assets/images/plane.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 2rem;
