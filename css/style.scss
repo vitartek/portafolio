@@ -24,6 +24,25 @@
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        // scale: 0.5;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        // scale: 1;
+        transform: translateX(0px);
+    }
+}
+
+%class-appear {
+    animation: appear linear;
+    animation-timeline: view(); /*vie2() idica solo la pasa cuando el elemento es visible en la pantalla*/
+    animation-range: entry 0% cover 40%;
+}
+
 body {
     background-color: $clr-dark;
     color: white;
@@ -163,14 +182,29 @@ header > *{
     justify-content: space-between;
 }
 
+@keyframes hola-appear {
+    0% {
+        opacity: .2;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 
 .hero {
     color: $clr-text;
 
+    .container {
+        animation: hola-appear 1s ease;
+        animation-range: entry 0% cover 40%;
+    }
+
     img {
         margin: 0 auto;
         width: clamp(15rem, 25vw, 20rem);
-        // max-width: 20rem;
     }
     h1{
         text-transform: uppercase;
@@ -178,6 +212,7 @@ header > *{
     h2 {
         text-transform: capitalize;
     }
+
 }
 
 .hero > * {
@@ -192,6 +227,10 @@ header > *{
     background-color: $clr-neutral-900;
     padding: 5rem 0;
 
+    .container {
+        @extend %class-appear;
+    }
+
     h2 {
         margin-bottom: 2rem;
     }
@@ -199,6 +238,12 @@ header > *{
         display: flex;
         gap: 1rem;
         overflow-x: auto;
+    }
+    .cards:hover .card {
+        filter: grayscale(.9);
+    }
+    .cards .card:hover {
+        filter: grayscale(0);
     }
     .card {
         min-width: 70%;
@@ -224,7 +269,7 @@ header > *{
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            gap: 2rem;
             overflow-x: initial;
         }
     }
@@ -232,6 +277,9 @@ header > *{
 
 .about {
     padding: 5rem 0;
+    .container {
+        @extend %class-appear;
+    }
 
     h2 {
         margin-bottom: 2rem;
@@ -240,6 +288,7 @@ header > *{
     p {
         position: relative
     }
+
     img.about__user {
         margin: 3rem auto 0;
         width: clamp(25rem, 27vw, 30rem);
@@ -304,6 +353,7 @@ header > *{
 
 .habilities {
     padding: 6rem 0rem 0rem;
+    @extend %class-appear;
     h2 {
         padding-inline: 5rem;
     }
@@ -339,6 +389,10 @@ header > *{
 
 .experience {
     padding-bottom: 4rem;
+    .container {
+        @extend %class-appear;
+    }
+
     h2 {
         margin-bottom: 2.3rem;
     }
@@ -410,6 +464,12 @@ footer {
     background-color: $clr-neutral-900;
     text-align: center;
 
+
+    .container {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+    }
     .footer__img {
         background-color: #D9D9D9;
         border-radius: 100%;

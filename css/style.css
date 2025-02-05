@@ -127,6 +127,22 @@ textarea:not([rows]) {
     --fs-md: 1em;
   }
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.experience .container, .habilities, .about .container, .proyects .container {
+  animation: appear linear;
+  animation-timeline: view(); /*vie2() idica solo la pasa cuando el elemento es visible en la pantalla*/
+  animation-range: entry 0% cover 40%;
+}
+
 body {
   background-color: #161616;
   color: white;
@@ -265,8 +281,22 @@ header > * {
   justify-content: space-between;
 }
 
+@keyframes hola-appear {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .hero {
   color: #DCEEF6;
+}
+.hero .container {
+  animation: hola-appear 1s ease;
+  animation-range: entry 0% cover 40%;
 }
 .hero img {
   margin: 0 auto;
@@ -299,6 +329,12 @@ header > * {
   gap: 1rem;
   overflow-x: auto;
 }
+.proyects .cards:hover .card {
+  filter: grayscale(0.9);
+}
+.proyects .cards .card:hover {
+  filter: grayscale(0);
+}
 .proyects .card {
   min-width: 70%;
 }
@@ -323,7 +359,7 @@ header > * {
   .proyects .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     overflow-x: initial;
   }
 }
@@ -482,6 +518,11 @@ footer {
   padding: 4rem 0;
   background-color: #1A1A1A;
   text-align: center;
+}
+footer .container {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 footer .footer__img {
   background-color: #D9D9D9;
