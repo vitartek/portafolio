@@ -24,11 +24,12 @@
     }
 }
 
+
 @keyframes appear {
     from {
         opacity: 0;
         // scale: 0.5;
-        transform: translateX(-100px);
+        transform: translateX(-300px);
     }
     to {
         opacity: 1;
@@ -40,7 +41,14 @@
 %class-appear {
     animation: appear linear;
     animation-timeline: view(); /*vie2() idica solo la pasa cuando el elemento es visible en la pantalla*/
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 25%;
+}
+
+
+@media (min-width: $query-md) {
+    %class-appear {
+        animation-range: entry 0% cover 40%;
+    }
 }
 
 body {
@@ -197,6 +205,14 @@ header > *{
 .hero {
     color: $clr-text;
 
+    > * {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        padding: 5rem 0;
+        gap: 1rem;
+    }
+
     .container {
         animation: hola-appear 1s ease;
         animation-range: entry 0% cover 40%;
@@ -212,15 +228,6 @@ header > *{
     h2 {
         text-transform: capitalize;
     }
-
-}
-
-.hero > * {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    padding: 5rem 0;
-    gap: 1rem;
 }
 
 .proyects {
@@ -230,7 +237,6 @@ header > *{
     .container {
         @extend %class-appear;
     }
-
     h2 {
         margin-bottom: 2rem;
     }
@@ -264,6 +270,10 @@ header > *{
     }
     .card:hover img {
         transform: scale(1.1);
+        border: 2px solid $clr-primary;
+    }
+    img {
+        width: clamp(15rem, 70vw, 20rem );
     }
     @media (min-width: $query-md) {
         .cards {
