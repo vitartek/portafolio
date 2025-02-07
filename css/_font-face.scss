@@ -21,16 +21,23 @@
 // }
 
 // font-family: 'newregular';
-@font-face {
-    font-family: 'myfont';
-    src: url('/assets/fonts/whitrabt-webfont.eot');
-    src: url('/assets/fonts/whitrabt-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/whitrabt-webfont.woff2') format('woff2'),
-         url('/assets/fonts/whitrabt-webfont.woff') format('woff'),
-         url('/assets/fonts/whitrabt-webfont.ttf') format('truetype'),
-         url('/assets/fonts/whitrabt-webfont.svg#newregular') format('svg');
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'myfont';
+//     src: url('/assets/fonts/whitrabt-webfont.eot');
+//     src: url('/assets/fonts/whitrabt-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('/assets/fonts/whitrabt-webfont.woff2') format('woff2'),
+//          url('/assets/fonts/whitrabt-webfont.woff') format('woff'),
+//          url('/assets/fonts/whitrabt-webfont.ttf') format('truetype'),
+//          url('/assets/fonts/whitrabt-webfont.svg#newregular') format('svg');
+//     font-display: swap;
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
+
+    // src: url('/assets/fonts/whitrabt-webfont.eot');
+    // src: url('/assets/fonts/whitrabt-webfont.eot?#iefix') format('embedded-opentype'),
+    //      url('/assets/fonts/whitrabt-webfont.woff2') format('woff2'),
+    //      url('/assets/fonts/whitrabt-webfont.woff') format('woff'),
+    //      url('/assets/fonts/whitrabt-webfont.ttf') format('truetype'),
+    //      url('/assets/fonts/whitrabt-webfont.svg#newregular') format('svg');
