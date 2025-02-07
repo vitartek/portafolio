@@ -5,7 +5,7 @@
     font-display: swap;
     src:
        local('jetbrainsmono'),
-       url('/assets/fonts/JetBrainsMono-Medium.ttf');
+       url('/assets/fonts/JetBrainsMono-Medium.woff2');
 }
 @font-face {
     font-family: 'jetbrainsmono';
@@ -14,7 +14,7 @@
     font-display: swap;
     src:
        local('jetbrainsmono'),
-       url('/assets/fonts/JetBrainsMono-Bold.ttf');
+       url('/assets/fonts/JetBrainsMono-Bold.woff2');
 }
 @font-face {
     font-family: 'jetbrainsmono';
@@ -23,5 +23,5 @@
     font-display: swap;
     src:
        local('jetbrainsmono'),
-       url('/assets/fonts/JetBrainsMono-ExtraBold.ttf');
+       url('/assets/fonts/JetBrainsMono-ExtraBold.woff2');
 }
