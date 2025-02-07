@@ -284,9 +284,11 @@ header {
         border: 2px solid $clr-primary;
     }
     img {
-        width: clamp(15rem, 70vw, 20rem );
+        width: clamp(15rem, 70dbw, 20rem );
         height: auto;
-        aspect-ratio: 5/4;
+        aspect-ratio: 1.25 / 1;
+        object-fit: cover;
+        // border: 2px solid red;
     }
     @media (min-width: $query-md) {
         .cards {
@@ -315,7 +317,7 @@ header {
 
     img.about__user {
         margin-top: 3rem;
-        width: clamp(25rem, 27vw, 30rem);
+        width: clamp(25rem, 27dbw, 30rem);
         height: auto;
         aspect-ratio: 4/4;
     }
