@@ -151,12 +151,12 @@ body {
   background-color: #161616;
   color: white;
   font-size: 16px;
-  font-family: "jetbrainsmono", system-ui, sans-serif;
+  font-family: "jetbrainsmono";
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "jetbrainsmono", system-ui, sans-serif;
+  font-family: "jetbrainsmono";
 }
 
 h1 {
@@ -379,6 +379,7 @@ header > * {
   margin-bottom: 2rem;
 }
 .about p {
+  font-family: system-ui, sans-serif;
   position: relative;
 }
 .about img.about__user {
@@ -472,12 +473,34 @@ header > * {
 .experience .card__info:not(:last-child) {
   margin-bottom: 1.2rem;
 }
+.experience .card__info {
+  text-align: left;
+  background-color: rgba(217, 217, 217, 0.2196078431);
+  border-radius: 10px;
+}
+.experience .card__info .card-body {
+  display: grid;
+  grid-template-columns: 10% 70%;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 1rem;
+}
+.experience .card__info p {
+  font-size: var(--fs-lg);
+  font-weight: normal;
+}
+.experience .card__info span {
+  font-size: 0.8em;
+}
 .experience .card__info .card-img {
   background-image: url(../assets/images/plane.webp);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 2rem;
-  height: 2rem;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+}
+.experience h3 {
+  font-size: var(--fs-lg);
 }
 @media (max-width: 45em) {
   .experience .experience__right {
@@ -495,31 +518,6 @@ header > * {
   .experience .container {
     gap: 2rem;
   }
-}
-
-.card__info {
-  text-align: left;
-  background-color: rgba(217, 217, 217, 0.2196078431);
-  border-radius: 10px;
-}
-.card__info .card-body {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  align-items: center;
-}
-.card__info .card-body {
-  padding: 2rem;
-}
-.card__info .card-body {
-  display: flex;
-  gap: 2rem;
-}
-.card__info p {
-  font-size: var(--fs-lg);
-  font-weight: normal;
-}
-.card__info span {
-  font-size: 0.8em;
 }
 
 footer {

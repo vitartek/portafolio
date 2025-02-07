@@ -56,12 +56,14 @@ body {
     color: white;
     font-size: 16px;
     // font-family: system-ui, sans-serif;
-    font-family: 'jetbrainsmono',system-ui, sans-serif;
+    // font-family: 'jetbrainsmono',system-ui, sans-serif;
+    font-family: 'jetbrainsmono';
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "jetbrainsmono", system-ui, sans-serif;
+    font-family: "jetbrainsmono";
+    // font-family: "jetbrainsmono", system-ui, sans-serif;
 }
 h1 {
     font-size: var(--fs-3xl);
@@ -317,6 +319,7 @@ header > *{
     }
 
     p {
+        font-family: system-ui, sans-serif;
         position: relative
     }
 
@@ -433,13 +436,35 @@ header > *{
     }
 
     .card__info {
+        text-align: left;
+        background-color: $clr-neutral-shade-100;
+        border-radius: $rounded-md;
+        .card-body {
+            display: grid;
+            grid-template-columns: 10% 70%;
+            align-items: center;
+            padding: 1.2rem;
+            gap: 1rem;
+        }
+
+        p {
+            font-size: var(--fs-lg);
+            font-weight: normal;
+        }
+        span {
+            font-size: .8em;
+        }
         .card-img {
             background-image: url(../assets/images/plane.webp);
             background-repeat: no-repeat;
-            background-size: 100% 100%;
-            width: 2rem;
-            height: 2rem;
+            background-size: 100%;
+            width: 40px;
+            height: 40px;
         }
+    }
+
+    h3 {
+        font-size: var(--fs-lg);
     }
 
     @media (max-width: $query-md) {
@@ -462,34 +487,6 @@ header > *{
     }
 }
 
-.card__info {
-    text-align: left;
-    background-color: $clr-neutral-shade-100;
-    border-radius: $rounded-md;
-
-    .card-body {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        align-items: center;
-    }
-
-    .card-body {
-        padding: 2rem;
-    }
-
-    .card-body {
-        display: flex;
-        gap: 2rem;
-    }
-
-    p {
-        font-size: var(--fs-lg);
-        font-weight: normal;
-    }
-    span {
-        font-size: .8em;
-    }
-}
 
 footer {
     padding: 4rem 0;
