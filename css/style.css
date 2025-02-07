@@ -242,8 +242,15 @@ header {
   padding: 1rem 0;
   z-index: 100;
 }
-header .header__logo {
-  width: clamp(3rem, 2vw, 5rem);
+header > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__logo img {
+  width: 3rem;
+  height: auto;
+  aspect-ratio: 5/4;
 }
 header .navbar ul {
   list-style: none;
@@ -267,12 +274,6 @@ header .navbar a:hover {
     padding: 0.5rem 1rem;
     font-size: var(--fs-lg);
   }
-}
-
-header > * {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 @keyframes hola-appear {
@@ -302,6 +303,10 @@ header > * {
 .hero img {
   margin: 0 auto;
   width: 15rem;
+  height: auto;
+  aspect-ratio: 4/4;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero h1 {
   text-transform: uppercase;
@@ -351,6 +356,8 @@ header > * {
 }
 .proyects img {
   width: clamp(15rem, 70vw, 20rem);
+  height: auto;
+  aspect-ratio: 5/4;
 }
 @media (min-width: 45em) {
   .proyects .cards {
@@ -373,7 +380,9 @@ header > * {
 }
 .about img.about__user {
   margin-top: 3rem;
-  width: 17rem;
+  width: clamp(25rem, 27vw, 30rem);
+  height: auto;
+  aspect-ratio: 4/4;
 }
 .about .about__card {
   background: rgba(217, 217, 217, 0.2196078431);
@@ -388,7 +397,8 @@ header > * {
 }
 .about .about__card img {
   width: 4rem;
-  color: white;
+  height: auto;
+  aspect-ratio: 4/4;
 }
 .about .about__left p::before {
   content: '"';
@@ -438,7 +448,11 @@ header > * {
   align-items: center;
 }
 .habilities img {
-  width: 6rem;
+  width: 5rem;
+  height: auto;
+  aspect-ratio: 4/4;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 45em) {
   .habilities .habilities__gallery {

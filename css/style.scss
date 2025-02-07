@@ -114,22 +114,6 @@ a {
     transition: 275ms ease;
 }
 
-// .btn-primary {
-//     background-color: $clr-primary;
-//     color: $clr-dark;
-//     position: relative;
-// }
-// .btn-primary::after {
-//     content: '';
-//     width: 100%;
-//     height: 100%;
-//     background-color: $clr-accent;
-//     z-index: -1;
-//     position: absolute;
-//     top: 10%;
-//     left: 5%;
-// }
-
 .btn-primary {
     font-size: 1.5rem;
     color: #fafafa;
@@ -141,13 +125,12 @@ a {
     box-shadow: 3px 3px #fafafa;
     cursor: pointer;
     margin: 35px 0;
-  }
+}
 
-  .btn-primary:active, .btn-primary:hover {
-    box-shadow: none;
-    transform: translate(3px, 3px);
-  }
-
+.btn-primary:active, .btn-primary:hover {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
 
 .card {
     display: flex;
@@ -172,8 +155,19 @@ header {
     padding: 1rem 0;
     z-index: 100;
 
+    > *{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .header__logo {
-        width: clamp(3rem, 2vw, 5rem);
+
+        img {
+            width: 3rem;
+            height: auto;
+            aspect-ratio: 5/4;
+        }
     }
     .navbar {
         ul {
@@ -203,13 +197,6 @@ header {
             }
         }
     }
-
-}
-
-header > *{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 @keyframes hola-appear {
@@ -222,7 +209,6 @@ header > *{
         transform: translateX(0px);
     }
 }
-
 
 .hero {
     color: $clr-text;
@@ -242,8 +228,10 @@ header > *{
 
     img {
         margin: 0 auto;
-        // width: clamp(15rem, 25vw, 20rem);
         width: 15rem;
+        height: auto;
+        aspect-ratio: 4 / 4;
+        object-fit: cover;
     }
     h1{
         text-transform: uppercase;
@@ -297,6 +285,8 @@ header > *{
     }
     img {
         width: clamp(15rem, 70vw, 20rem );
+        height: auto;
+        aspect-ratio: 5/4;
     }
     @media (min-width: $query-md) {
         .cards {
@@ -325,8 +315,9 @@ header > *{
 
     img.about__user {
         margin-top: 3rem;
-        // width: clamp(25rem, 27vw, 30rem);
-        width: 17rem;
+        width: clamp(25rem, 27vw, 30rem);
+        height: auto;
+        aspect-ratio: 4/4;
     }
 
     .about__card {
@@ -343,9 +334,10 @@ header > *{
         }
 
         img {
-            // max-width: 5rem;
             width: 4rem;
-            color: white;
+            height: auto;
+            aspect-ratio: 4 / 4;
+            // object-fit: contain;
         }
     }
 
@@ -366,6 +358,7 @@ header > *{
             gap: 2rem;
         }
     }
+
     .about__right {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -385,7 +378,6 @@ header > *{
     }
 }
 
-
 .habilities {
     padding: 6rem 0rem 0rem;
     @extend %class-appear;
@@ -402,9 +394,10 @@ header > *{
         align-items: center;
     }
     img {
-        // width: 100%;
-        // max-width: 7rem;
-        width: clamp(5rem, 6rem, 7rem);
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 4 / 4;
+        object-fit: cover;
     }
 
     @media (min-width : $query-md) {
