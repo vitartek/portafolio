@@ -4,21 +4,21 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/JetBrainsMono-Medium.woff2") format("woff2");
+  src: url("/assets/fonts/JetBrainsMono-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "jetbrainsmono";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "jetbrainsmono";
   font-weight: bolder;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+  src: url("/assets/fonts/JetBrainsMono-ExtraBold.woff") format("woff");
 }
 /* Box sizing rules */
 *,
