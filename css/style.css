@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "my-font";
+  font-family: "myfont";
   src: url("/assets/fonts/whitrabt-webfont.eot");
   src: url("/assets/fonts/whitrabt-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/whitrabt-webfont.woff2") format("woff2"), url("/assets/fonts/whitrabt-webfont.woff") format("woff"), url("/assets/fonts/whitrabt-webfont.ttf") format("truetype"), url("/assets/fonts/whitrabt-webfont.svg#newregular") format("svg");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -137,12 +138,12 @@ body {
   background-color: #161616;
   color: white;
   font-size: 16px;
-  font-family: "my-font", system-ui, sans-serif;
+  font-family: "myfont", system-ui, sans-serif;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "my-font", system-ui, sans-serif;
+  font-family: "myfont", system-ui, sans-serif;
 }
 
 h1 {
@@ -167,7 +168,7 @@ h4 {
 
 p {
   font-size: var(--fs-md);
-  font-family: "my-font", Helvetica, sans-serif;
+  font-family: "myfont", Helvetica, sans-serif;
   font-weight: normal;
 }
 
