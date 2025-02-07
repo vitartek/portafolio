@@ -56,14 +56,12 @@ body {
     color: white;
     font-size: 16px;
     // font-family: system-ui, sans-serif;
-    // font-family: 'jetbrainsmono',system-ui, sans-serif;
-    font-family: 'jetbrainsmono';
+    font-family: 'jetbrainsmono',system-ui, sans-serif;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "jetbrainsmono";
-    // font-family: "jetbrainsmono", system-ui, sans-serif;
+    font-family: "jetbrainsmono", system-ui, sans-serif;
 }
 h1 {
     font-size: var(--fs-3xl);
@@ -83,6 +81,8 @@ h4 {
 }
 p {
     font-size: var(--fs-md);
+    font-family: "jetbrainsmono", Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 a {
@@ -393,7 +393,6 @@ header > *{
         padding-inline: 5rem;
     }
     .habilities__gallery {
-        // border: 1px solid red;
         background-color: $clr-neutral-900;
         padding: 3rem 1rem;
         display: flex;
