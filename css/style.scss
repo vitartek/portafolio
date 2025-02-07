@@ -47,7 +47,7 @@
 
 @media (min-width: $query-md) {
     %class-appear {
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 25%;
     }
 }
 
@@ -55,7 +55,8 @@ body {
     background-color: $clr-dark;
     color: white;
     font-size: 16px;
-    font-family: system-ui, sans-serif;
+    // font-family: system-ui, sans-serif;
+    font-family: 'jetbrainsmono',system-ui, sans-serif;
     overflow-x: hidden;
 }
 
@@ -111,21 +112,40 @@ a {
     transition: 275ms ease;
 }
 
+// .btn-primary {
+//     background-color: $clr-primary;
+//     color: $clr-dark;
+//     position: relative;
+// }
+// .btn-primary::after {
+//     content: '';
+//     width: 100%;
+//     height: 100%;
+//     background-color: $clr-accent;
+//     z-index: -1;
+//     position: absolute;
+//     top: 10%;
+//     left: 5%;
+// }
+
 .btn-primary {
-    background-color: $clr-primary;
-    color: $clr-dark;
-    position: relative;
-}
-.btn-primary::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: $clr-accent;
-    z-index: -1;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-}
+    font-size: 1.5rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+  }
+
+  .btn-primary:active, .btn-primary:hover {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+
 
 .card {
     display: flex;
@@ -220,7 +240,8 @@ header > *{
 
     img {
         margin: 0 auto;
-        width: clamp(15rem, 25vw, 20rem);
+        // width: clamp(15rem, 25vw, 20rem);
+        width: 15rem;
     }
     h1{
         text-transform: uppercase;
@@ -300,11 +321,12 @@ header > *{
     }
 
     img.about__user {
-        margin: 3rem auto 0;
-        width: clamp(25rem, 27vw, 30rem);
+        margin-top: 3rem;
+        // width: clamp(25rem, 27vw, 30rem);
+        width: 17rem;
     }
 
-    .card {
+    .about__card {
         background: $clr-neutral-shade-100;
         padding: 1rem;
         border-radius: $rounded-md;
@@ -315,6 +337,12 @@ header > *{
 
         h3 {
             text-transform: uppercase;
+        }
+
+        img {
+            // max-width: 5rem;
+            width: 4rem;
+            color: white;
         }
     }
 
@@ -340,12 +368,6 @@ header > *{
         grid-template-columns: repeat(2, 1fr);
         gap: .7rem;
         margin-top: 2rem;
-
-        img {
-            // max-width: 5rem;
-            width: 5rem;
-            color: white;
-        }
     }
 
     .about__right >:nth-child(2), .about__right >:nth-child(4) {
