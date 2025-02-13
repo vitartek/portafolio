@@ -326,12 +326,6 @@ header .navbar a:hover {
   gap: 1rem;
   overflow-x: auto;
 }
-.proyects .cards:hover .card {
-  filter: grayscale(0.9);
-}
-.proyects .cards .card:hover {
-  filter: grayscale(0);
-}
 .proyects .card {
   min-width: 70%;
 }
@@ -342,7 +336,7 @@ header .navbar a:hover {
   width: 25rem;
 }
 .proyects .card h3 {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .proyects .card p {
   margin-top: 0.5rem;
