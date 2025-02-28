@@ -175,6 +175,12 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 600px) {
+  body, div, html, li, ol, pre, table, textarea, ul {
+    scrollbar-color: rgba(156, 162, 172, 0.5019607843) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+  }
+}
 .container {
   padding: 0 0.7rem;
   margin: 0 auto;
@@ -325,6 +331,12 @@ header .navbar a:hover {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
+}
+.proyects .cards:hover .card {
+  filter: grayscale(0.9);
+}
+.proyects .cards .card:hover {
+  filter: grayscale(0);
 }
 .proyects .card {
   min-width: 70%;

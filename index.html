@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-    <!-- <meta name="viewport" content="width=1024, initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no" />
      <meta name="description" content="Portafólio personal de diseño y desarrollo web de Carlos Ariza">
      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Portafolio Diseño FrontEnd Carlos Ariza</title>
@@ -18,7 +17,7 @@
                 <a href="#">
                     <img
                         loading="eager"
-                        src="assets/images/logo-white.webp" alt="logo de la marca">
+                        src="assets/images/logo-white.webp" alt="logotipo de la página">
                 </a>
             </div>
             <nav id="navbar" class="navbar" aria-label="menú principal">
@@ -45,7 +44,7 @@
             <h2>Diseñador y Desarrollador Front End</h2>
             <p>Hola, tengo más de cuatro años de experiencia en la creación de interfaces y páginas web.</p>
             <div>
-                <a href="#footer" class="btn btn-primary">Contactar</a>
+                <a  href="#footer" class="btn btn-primary" role="button" aria-label="Botón para ir a la sección de contacto">Contactar</a>
             </div>
         </div>
     </section>
@@ -56,7 +55,7 @@
             <h2 tabindex="0">Mis Proyectos</h2>
             <div class="cards">
                 <div class="card">
-                    <a href="https://www.behance.net/gallery/219230145/Rediseno-Landing-Page" target="_blank">
+                    <a href="https://www.behance.net/gallery/219230145/Rediseno-Landing-Page" target="_blank" alt="se abre en una nueva ventana">
                         <img
                             loading="lazy"
                             src="assets/images/py-quikishop.webp"
@@ -66,12 +65,33 @@
                     </a>
                     <h3>Quikishop.com</h3>
                     <p>
-                        DISEÑO Y DESARROLLO UI <br>
-                        DESARROLLADO CON HTML5 - CSS3 - JS
+                        DISEÑO Y DESARROLLO <abbr title="User Interface">UI</abbr> <br>
+                        DESARROLLADO CON
+                        <abbr title="HyperText Markup Language, versión 5">HTML5</abbr> -
+                        <abbr title="Cascading Style Sheets">CSS3</abbr> -
+                        <abbr title="Java script">JS</abbr>
                     </p>
                 </div>
                 <div class="card">
-                    <a href="https://www.behance.net/gallery/198146675/Salva-Tree-Proyecto-Solidario" target="_blank">
+                    <a href="https://www.behance.net/gallery/220414039/Panel-de-Administrador" target="_blank" alt="se abre en una nueva ventana">
+                        <img
+                            loading="lazy"
+                            src="assets/images/py_dashboard.webp"
+                            srcset="assets/images/py_dashboard.webp 600w, assets/images/py_dashboard.webp"
+                            sizes="(max-width: 600px) 600px, 1200"
+                            alt="Carátula del proyecto Dashboard, un computador muestra la página, un celular muestra el modo oscuro">
+                    </a>
+                    <h3>Dashboard Dark Mode</h3>
+                    <p>
+                        DESARROLLO WEB <abbr title="User Interface">UI</abbr> <br>
+                        DESARROLLADO CON
+                        <abbr title="HyperText Markup Language, versión 5">HTML5</abbr> -
+                        <abbr title="Cascading Style Sheets">CSS3</abbr> -
+                        <abbr title="Java script">JS</abbr>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://www.behance.net/gallery/198146675/Salva-Tree-Proyecto-Solidario" target="_blank" alt="se abre en una nueva ventana">
                         <img
                             loading="lazy"
                             src="assets/images/py_salvatree.webp"
@@ -81,12 +101,12 @@
                     </a>
                     <h3>SalvaTree</h3>
                     <p>
-                        DISEÑO UX- UI <br>
-                        DESARROLLADO EN  FIGMA
+                        DISEÑO <abbr title="User Experience">UX</abbr> - <abbr title="User Interface">UI</abbr>
+                        <br> DESARROLLADO EN  FIGMA
                     </p>
                 </div>
                 <div class="card">
-                    <a href="https://www.behance.net/gallery/198223951/BEERSTREET-Aplicacion-para-una-cerveceria" target="_blank">
+                    <a href="https://www.behance.net/gallery/198223951/BEERSTREET-Aplicacion-para-una-cerveceria" target="_blank" alt="se abre en una nueva ventana">
                         <img
                             loading="lazy"
                             src="assets/images/py-beerstreet.webp"
@@ -96,12 +116,12 @@
                     </a>
                     <h3>BeerStreet</h3>
                     <p>
-                        DISEÑO UX- UI <br>
-                        DESARROLLADO EN  FIGMA
+                        DISEÑO <abbr title="User Experience">UX</abbr> - <abbr title="User Interface">UI</abbr>
+                        <br> DESARROLLADO EN  FIGMA
                     </p>
                 </div>
                 <div class="card">
-                    <a href="https://www.behance.net/gallery/198133673/Diseno-UX-UI-Magic-Drink" target="_blank">
+                    <a href="https://www.behance.net/gallery/198133673/Diseno-UX-UI-Magic-Drink" target="_blank" alt="se abre en una nueva ventana">
                         <img
                             loading="lazy"
                             src="assets/images/py_magicdrink.webp"
@@ -111,8 +131,8 @@
                     </a>
                     <h3>MagicDrink</h3>
                     <p>
-                        DISEÑO UX- UI <br>
-                        DESARROLLADO EN  FIGMA
+                        DISEÑO <abbr title="User Experience">UX</abbr> - <abbr title="User Interface">UI</abbr>
+                        <br> DESARROLLADO EN  FIGMA
                     </p>
                 </div>
             </div>
