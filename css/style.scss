@@ -257,18 +257,18 @@ header {
     }
     h2 {
         margin-bottom: 2rem;
-    }
+    } 
     .cards {
         display: flex;
         gap: 1rem;
         overflow-x: auto;
     }
-    .cards:hover .card {
-        filter: grayscale(.9);
-    }
-    .cards .card:hover {
-        filter: grayscale(0);
-    }
+    // .cards:hover .card {
+    //     filter: grayscale(.9);
+    // }
+    // .cards .card:hover {
+    //     filter: grayscale(0);
+    // }
     .card {
         min-width: 70%;
         img {
@@ -322,11 +322,17 @@ header {
         position: relative
     }
 
+    svg {
+        fill: $clr-primary;
+        width: 4rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
     img.about__user {
-        margin-top: 3rem;
         width: clamp(25rem, 27dbw, 30rem);
         height: auto;
         aspect-ratio: 4/4;
+        margin: 3rem auto 0;
     }
 
     .about__card {
@@ -350,13 +356,25 @@ header {
         }
     }
 
+    .about__left {
+        text-align: center;
+    }
     .about__left p::before {
         content: '"';
         font-size: 5rem;
         position: absolute;
         color: $clr-primary;
-        top: .7rem;
-        left: -2.4rem;
+        top: 1.5rem;
+        left: -1rem;
+        line-height: 0;
+    }
+    .about__left p::after {
+        content: '"';
+        font-size: 5rem;
+        position: absolute;
+        color: $clr-primary;
+        bottom: -1rem;
+        right: 1rem;
         line-height: 0;
     }
 
@@ -456,11 +474,21 @@ header {
             font-size: .8em;
         }
         .card-img {
-            background-image: url(../assets/images/plane.webp);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 40px;
-            height: 40px;
+            // background-image: url(../assets/images/plane\ 1.svg);
+            // background-repeat: no-repeat;
+            // background-color: red;
+            // filter: grayscale(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
+            // background-size: 100%;
+            width: 30px;
+            height: 30px;
+        }
+        .card-img {
+            display: inline-block;
+            background-color: $clr-primary;
+            mask-image: url('icono.png');
+            mask-size: cover;
+            -webkit-mask-image: url(../assets/images/plane\ 1.svg);
+            -webkit-mask-size: cover;
         }
     }
 

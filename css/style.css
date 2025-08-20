@@ -272,7 +272,7 @@ header .navbar a {
   font-size: var(--fs-md);
 }
 header .navbar a:hover {
-  color: #8BC4E2;
+  color: #D2FF96;
 }
 @media (min-width: 45em) {
   header .navbar a {
@@ -332,12 +332,6 @@ header .navbar a:hover {
   gap: 1rem;
   overflow-x: auto;
 }
-.proyects .cards:hover .card {
-  filter: grayscale(0.9);
-}
-.proyects .cards .card:hover {
-  filter: grayscale(0);
-}
 .proyects .card {
   min-width: 70%;
 }
@@ -357,7 +351,7 @@ header .navbar a:hover {
 }
 .proyects .card:hover img {
   transform: scale(1.1);
-  border: 2px solid #8BC4E2;
+  border: 2px solid #D2FF96;
 }
 .proyects img {
   width: clamp(15rem, 70dbw, 20rem);
@@ -385,11 +379,17 @@ header .navbar a:hover {
   font-family: system-ui, sans-serif;
   position: relative;
 }
+.about svg {
+  fill: #D2FF96;
+  width: 4rem;
+  height: auto;
+  aspect-ratio: 1/1;
+}
 .about img.about__user {
-  margin-top: 3rem;
   width: clamp(25rem, 27dbw, 30rem);
   height: auto;
   aspect-ratio: 4/4;
+  margin: 3rem auto 0;
 }
 .about .about__card {
   background: rgba(217, 217, 217, 0.2196078431);
@@ -407,13 +407,25 @@ header .navbar a:hover {
   height: auto;
   aspect-ratio: 4/4;
 }
+.about .about__left {
+  text-align: center;
+}
 .about .about__left p::before {
   content: '"';
   font-size: 5rem;
   position: absolute;
-  color: #8BC4E2;
-  top: 0.7rem;
-  left: -2.4rem;
+  color: #D2FF96;
+  top: 1.5rem;
+  left: -1rem;
+  line-height: 0;
+}
+.about .about__left p::after {
+  content: '"';
+  font-size: 5rem;
+  position: absolute;
+  color: #D2FF96;
+  bottom: -1rem;
+  right: 1rem;
   line-height: 0;
 }
 @media (min-width: 45em) {
@@ -503,11 +515,17 @@ header .navbar a:hover {
   font-size: 0.8em;
 }
 .experience .card__info .card-img {
-  background-image: url(../assets/images/plane.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+.experience .card__info .card-img {
+  display: inline-block;
+  background-color: #D2FF96;
+  -webkit-mask-image: url("icono.png");
+          mask-image: url("icono.png");
+  mask-size: cover;
+  -webkit-mask-image: url(../assets/images/plane\ 1.svg);
+  -webkit-mask-size: cover;
 }
 .experience h3 {
   font-size: var(--fs-lg);
