@@ -135,8 +135,10 @@ a {
 }
 
 .btn-primary:active, .btn-primary:hover {
-box-shadow: none;
+box-shadow: 0 0 $clr-primary;
 transform: translate(3px, 3px);
+color: $clr-primary;
+border-color: $clr-primary;
 }
 
 .card {
@@ -467,7 +469,7 @@ header {
         }
 
         p {
-            font-size: var(--fs-lg);
+            font-size: var(--fs-md);
             font-weight: normal;
         }
         span {

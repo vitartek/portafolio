@@ -222,8 +222,10 @@ a {
 }
 
 .btn-primary:active, .btn-primary:hover {
-  box-shadow: none;
+  box-shadow: 0 0 #D2FF96;
   transform: translate(3px, 3px);
+  color: #D2FF96;
+  border-color: #D2FF96;
 }
 
 .card {
@@ -508,7 +510,7 @@ header .navbar a:hover {
   gap: 1rem;
 }
 .experience .card__info p {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   font-weight: normal;
 }
 .experience .card__info span {
